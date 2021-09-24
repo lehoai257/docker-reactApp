@@ -11,6 +11,7 @@ script:
   - docker run -e CI=true lehoai257/docker-reactapp npm run test
 
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "docker"
